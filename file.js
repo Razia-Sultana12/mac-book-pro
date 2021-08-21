@@ -11,6 +11,7 @@ extraMemory.addEventListener('click',function(){
     memoryCost.innerText ='180';
     totalPrice();
 })
+
 //Storage update
 const attachedStorage=document.getElementById('attached-storage');
 const extraStorage1=document.getElementById('extra-storage1');
@@ -29,6 +30,7 @@ extraStorage2.addEventListener('click',function(){
     storageCost.innerText='180';
     totalPrice();
 })
+
 //Delivery Update
 const freeDelivery=document.getElementById('free-delivery');
 const deliveryCharge=document.getElementById('delivery-charge');
@@ -53,8 +55,8 @@ function totalPrice(){
     total.innerText=grandTotal;
     const fullAmount=grandTotal;
     document.getElementById('total-amount').innerText=fullAmount;
-    
 }
+
 //Promo Code
 document.getElementById('apply-button').addEventListener('click',function(){
     const promoCode=document.getElementById('promo-code');
@@ -67,4 +69,5 @@ document.getElementById('apply-button').addEventListener('click',function(){
         total.innerText=taxTotal;
         totalPriceFooter.innerText=taxTotal;
     }
+    promoCode.value='';
 })
